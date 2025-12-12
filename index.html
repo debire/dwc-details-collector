@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DWC Event - Email Registration</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.svg" alt="DWC Logo" class="logo">
+        
+        <div class="form-container">
+            <h2 class="form-title">Input your details below</h2>
+            
+            <form id="emailForm">
+                <input 
+                    type="text" 
+                    id="firstName" 
+                    name="firstName" 
+                    placeholder="First Name" 
+                    required
+                    class="form-input"
+                >
+                
+                <input 
+                    type="text" 
+                    id="surname" 
+                    name="surname" 
+                    placeholder="Surname" 
+                    required
+                    class="form-input"
+                >
+                
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Email Address" 
+                    required
+                    class="form-input"
+                >
+                
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    placeholder="Phone Number" 
+                    required
+                    class="form-input"
+                >
+                
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <span id="btnText">Submit</span>
+                    <span id="loader" class="loader hidden"></span>
+                </button>
+            </form>
+            
+            <div id="message" class="message hidden"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
