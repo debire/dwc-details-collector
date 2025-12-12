@@ -7,7 +7,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
-    overflow-x: hidden;
     background: linear-gradient(135deg, #F0C96C 0%, #ffffff 100%);
     display: flex;
     align-items: center;
@@ -22,11 +21,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .logo {
     width: 220px;
     height: auto;
+    margin-bottom: 5px;
+    display: block;
 }
 
 .form-container {
@@ -146,9 +148,21 @@ body {
 
 /* Responsive Design */
 @media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
     .logo {
         width: 180px;
         margin-bottom: 30px;
+    }
+
+    .form-container {
+        max-width: 100%;
     }
 
     .form-title {
